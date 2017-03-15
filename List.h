@@ -22,6 +22,8 @@ class List //begin List definition
      
      /** MISSING OPERATIONS */
      //... fill in ....
+     void display();
+     void clear();
 
 };//end List definition
 

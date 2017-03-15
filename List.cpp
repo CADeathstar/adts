@@ -18,8 +18,7 @@ class List::Node //self-referential Node class
 
 List::~List()
 {
-    while(num_elements > 0)
-      remove(1);
+    clear();
 }
 	
 int List::size()
@@ -92,4 +91,18 @@ void List::remove(int k)
 	}
 	
 	//Implementations of missing operations
-	
+void List::display()
+{
+	for (Node* tmpPtr = frontPtr; tmpPtr != nullptr; tmpPtr = tmpPtr -> link)
+		{
+			cout << tmpPtr -> data << "";
+		}
+}
+
+void List::clear()
+{
+	while (num_elements != 0)
+	{
+		remove(1);
+	}
+}
