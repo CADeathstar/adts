@@ -1,26 +1,26 @@
 #include "StackV.h"
 
-int StackV::size()
+int Stack::size()
 {
 	return data.size();
 }
 
-void StackV::push(int x)
+void Stack::push(int x)
 {
 	data.push_back(x);
 }
 
-void StackV::pop()
+void Stack::pop()
 {
 	data.pop_back();
 }
 
-void StackV::top()
+int Stack::top()
 {
 	return data[data.size()-1];
 }
 
-void StackV::clear()
+void Stack::clear()
 {
 	data.clear();
 }

@@ -106,3 +106,13 @@ void List::clear()
 		remove(1);
 	}
 }
+
+int List::getAt(int k)
+{
+	Node* tmpPtr = frontPtr;
+	for(int loc=1;loc!=k;loc++)
+		{
+			tmpPtr = tmpPtr -> link;
+		}
+		return tmpPtr -> data;
+}
